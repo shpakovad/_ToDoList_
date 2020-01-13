@@ -1,0 +1,197 @@
+
+html {
+    background: url(assets/img/cats.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.todoList {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.todoList > div {
+    padding: 10px;
+}
+
+.todoList-task.done {
+    text-decoration: line-through;
+}
+
+.filter-active {
+    height: 25px;
+    width: 60px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 1px 0px #818f0c;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 9px;
+}
+
+.error {
+    border-color: red;
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+    margin-right: 10px;
+    box-shadow: 3px 5px red;
+}
+
+.todoList-header__title {
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    -webkit-animation: neon .08s ease-in-out infinite alternate;
+    animation: neon .08s ease-in-out infinite alternate;
+}
+
+/*-- Animation Keyframes --*/
+@-webkit-keyframes neon {
+    from {
+        text-shadow: 0 0 10px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52), 0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78), 0 0 54px rgba(30, 132, 242, 0.92);
+    }
+    to {
+        text-shadow: 0 0 10px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58), 0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88), 0 0 60px #1e84f2;
+    }
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 10px rgba(202, 228, 225, 0.92),
+        0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(65, 242, 231, 0.52), 0 0 21px rgba(242, 40, 46, 0.92), 0 0 34px rgba(30, 132, 242, 0.78), 0 0 54px rgba(30, 132, 242, 0.92);
+    }
+    to {
+        text-shadow: 0 0 10px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58), 0 0 22px rgba(242, 22, 54, 0.84), 0 0 38px rgba(30, 132, 242, 0.88), 0 0 60px #f21c10;
+    }
+}
+
+.todoList-newTaskForm {
+    text-align: center;
+}
+
+.inputStyle {
+    border-color: #ad51cb;
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+    margin-right: 10px;
+    box-shadow: 3px 5px #818f0c;
+    margin-bottom: 20px;
+}
+
+.btn-headerStyle {
+    height: 40px;
+    width: 90px;
+    border-radius: 20px;
+    background: #ad51cb;
+    box-shadow: 1px 0px #818f0c;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.todoList-tasks {
+    margin-left: 15%;
+    width: 500px;
+    word-wrap: break-word;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.text-style {
+    font-size: 30px;
+    font-style: italic;
+    padding-right: 20px;
+    font-weight: 500;
+}
+
+.btn-delete {
+    height: 20px;
+    width: 40px;
+    border-radius: 20px;
+    background: #ad51cb;
+    box-shadow: 1px 0px #818f0c;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.btn-footer {
+    height: 25px;
+    width: 60px;
+    border-radius: 20px;
+    background: #ad51cb;
+    box-shadow: 1px 0px #818f0c;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 9px;
+    margin-bottom: 30px;
+}
+
+.visibility {
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 hsl(20, 5%, 20%),
+    2px 2px 0 hsl(0, 0%, 1%),
+    3px 3px 0 hsl(35, 2%, 49%),
+    4px 4px 0 hsl(35, 3%, 12%),
+    5px 5px 0 hsl(45, 3%, 22%),
+    6px 6px 0 hsl(45, 19%, 9%),
+    7px 7px 0 hsl(55, 100%, 60%),
+    8px 8px 0 hsl(55, 100%, 65%);
+    color: hsl(0, 3%, 10%);
+    transition: all 1s;
+    padding-bottom: 100px;
+}
+
+visibility:hover {
+    text-shadow: 1px -1px 0 hsl(290, 100%, 40%),
+    2px -2px 0 hsl(290, 100%, 40%),
+    3px -3px 0 hsl(280, 100%, 60%),
+    4px -4px 0 hsl(280, 100%, 60%),
+    5px -5px 0 hsl(270, 100%, 75%),
+    6px -6px 0 hsl(270, 100%, 80%),
+    7px -7px 0 hsl(260, 100%, 85%),
+    8px -8px 0 hsl(260, 100%, 90%);
+    color: hsl(300, 100%, 30%);
+}
+
+@media screen and (max-width: 768px) {
+    .todoList {
+        width: 300px;
+    }
+    .inputStyle {
+        width: 216px;
+        height: 20px;
+    }
+    .btn-headerStyle {
+        height: 30px;
+        width: 50px;
+    }
+    .todoList-tasks {
+        width: 200px;
+    }
+    .todoList-header__title {
+        font-size: 30px;
+    }
+    .text-style {
+        font-size: 17px;
+    }
+    .btn-delete {
+        height: 15px;
+        width: 20px;
+        font-size: 10px;
+    }
+    .checkbox {
+        width: 15px;
+        height: 15px;
+    }
+    .visibility {
+        font-size: 15px;
+    }
+    }
+
+
