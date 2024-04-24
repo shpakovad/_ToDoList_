@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://shpakovad.github.io/_ToDoList_",
   "dependencies": {
-    "gh-pages": "^2.2.0",
+    "gh-pages": "^5.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.1.3",
